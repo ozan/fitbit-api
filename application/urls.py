@@ -14,6 +14,7 @@ from application import views
 # Historic data API endpoints
 app.add_url_rule('/weight', 'weight', view_func=views.weight)
 app.add_url_rule('/sleep', 'sleep', view_func=views.sleep)
+app.add_url_rule('/sleep/awoken', 'awoken', view_func=views.awoken)
 app.add_url_rule('/mood', 'mood', view_func=views.mood)
 
 # App Engine warm up handler

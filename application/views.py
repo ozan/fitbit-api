@@ -27,6 +27,12 @@ def sleep(auth):
     
     
 @requires_auth
+def awoken(auth):
+    """A history of the number of times awoken each night"""
+    return _historic_graph_data(auth, 'timesWokenUp')
+    
+    
+@requires_auth
 def mood(auth):
     """A history of the user's daily mood"""
     return _historic_graph_data(auth, 'mood')

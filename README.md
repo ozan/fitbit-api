@@ -34,7 +34,8 @@ To be clear, this is an API, not a client. You do not need to be using Python, s
 
 - /weight
 - /mood
-- /sleep
+- /sleep (time asleep)
+- /sleep/awoken (number of times woken)
 
 You can also use the following GET parameters for any endpoint:
 
