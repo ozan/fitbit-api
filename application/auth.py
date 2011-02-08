@@ -53,7 +53,7 @@ class FitbitAuthorization(object):
         if data is None:
             return None
             
-        if not memcache.add(self._get_cache_key(), data, 60 * 60 * 24):
+        if not memcache.add(self._get_cache_key(), data, 60 * 60 * 24 * 90):
             logging.error("Memcache set failed.")
             
         return data
